@@ -6,56 +6,28 @@ Next-Prisma-Starter is a boilerplate project designed to help you quickly set up
 
 - **Next.js**: A popular React framework for building server-rendered and statically generated applications.
 - **Prisma**: A modern database toolkit for Node.js and TypeScript, making database access and management more efficient and developer-friendly.
-- **Redux Toolkit**: A library that simplifies state management in React applications, enabling you to write scalable and maintainable code.
-- **RTK Query**: A powerful data-fetching library that simplifies fetching, caching, and updating data in your React components.
+- **React Query**: A powerful data-fetching library that simplifies fetching, caching, and updating data in your React components.
 - **Tailwind CSS**: A utility-first CSS framework for rapidly building custom user interfaces with minimal CSS code.
+- **Chakra UI**
 
 ## Getting Started
 
-To get started with Next-Prisma-Starter, follow these steps:
+Firstly you need this tech, that are required to run on local:
 
-1. **Clone the Repository**: Clone this repository to your local machine using Git.
+- Docker/Podman - Used for the database.
+- node js (^16 is recomended).
+- npm/yarn/pnpm/others (I will use pnpm for this guide).
 
-   ```bash
-   git clone https://github.com/ManishPJha/next-prisma-starter.git
-   ```
+Step to run on local (first time only):
 
-2. **Install Dependencies**: Navigate to the project directory and install the required dependencies.
-
-   ```bash
-   cd next-prisma-starter
-   npm install
-   ```
-
-3. **Set Up the Database**: Configure your database connection in the `prisma/schema.prisma` file. You can use PostgreSQL, MySQL, SQLite, or another supported database.
-
-4. **Run Migrations**: Apply database migrations to create the database schema.
-
-   ```bash
-   npx prisma migrate dev --name your_migration_name
-   ```
-
-   For existing schema you can update your schema changes without creating an migration folder with following command:
-
-   ```bash
-   npm run push
-   ```
-
-5. **Seed Database**: To seed your database with dummy data.
-
-   ```bash
-   npm run seed
-   ```
-
-   also you can set limit of dummy data you need from the `config` file located at `src/config/default.ts`
-
-6. **Start the Development Server**: Start the Next.js development server.
-
-   ```bash
-   npm run dev
-   ```
-
-7. **Open Your App**: Your application should now be running at [http://localhost:3000](http://localhost:3000). You can start building your project by modifying the source code located in the `src` directory.
+1. Clone this repostiory `git clone https://github.com/rizkisiraj/notes-app-dibimbing`
+2. Move into the directory `cd notes-app-dibimbing`
+3. Install all the dependancy `npm install`
+4. Move into the prisma directory `cd prisma`
+5. Run the docker compose file `docker compose up`
+6. populate the env variable `cp .env.example .env`
+7. Run the Pisma migration `npm prisma db push`
+8. Finaly the seeder `npm prisma db seed`
 
 ## Folder Structure
 
@@ -69,7 +41,7 @@ Next-Prisma-Starter follows a well-organized folder structure to keep your codeb
 - `api`: Custom API routes for server-side logic.
 
 ```bash
-next-prisma-starter/
+notes-app-dibimbing/
 ├── prisma/
 ├── public/
 ├── src/
