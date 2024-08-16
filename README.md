@@ -1,6 +1,6 @@
-# Next-Prisma-Starter
+# Notes App Dibimbing
 
-Next-Prisma-Starter is a boilerplate project designed to help you quickly set up a well-organized development environment for building web applications using Next.js, Prisma, Redux Toolkit, RTK Query, and Tailwind CSS for styling. This starter template provides a solid foundation for your projects, making it easier to get started with popular technologies and best practices.
+Notes App dengan fungsionalitas CRUD.
 
 ## Tech Stack
 
